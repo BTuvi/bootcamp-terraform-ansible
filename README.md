@@ -1,6 +1,6 @@
 # Node.js Weight Tracker
 
-![Demo](docs/build-weight-tracker-app-demo.gif)
+![image](https://user-images.githubusercontent.com/83664974/138458613-873743fc-077f-486b-ad60-fea0c8b0219d.png)
 
 This sample application demonstrates the following technologies.
 
