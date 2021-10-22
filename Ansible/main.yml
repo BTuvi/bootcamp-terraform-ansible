@@ -1,0 +1,25 @@
+---
+- hosts: development
+  remote_user: BTuvi
+  become: yes
+  become_method: sudo
+  vars:
+    temp_folder: /tmp
+  tasks:
+    #Install prerequisites
+    - include: tasks/prerequisites.yml
+
+    #Install Node.js
+    - include: tasks/nodejs.yml
+
+    #Git clone to project
+    #- include: tasks/gitclone.yml
+ 
+    #Add .env file
+    - include: tasks/addEnvFile.yml
+
+    #npm i
+    - include: tasks/npmi.yml
+
+    # PM2 jobs
+    - include: tasks/pm2job.yml

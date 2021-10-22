@@ -1,0 +1,22 @@
+- name: Creating a file with content
+  copy:
+    dest: "/home/BTuvi/bootcamp-app/.env"
+    content: |
+       #Host configuration
+       PORT=8080
+       HOST=0.0.0.0
+       NODE_ENV=development
+       HOST_URL=http://51.144.122.11:8080
+       COOKIE_ENCRYPT_PWD=superAwesomePasswordStringThatIsAtLeast32CharactersLong!
+
+       # Okta configuration
+       OKTA_ORG_URL=https://dev-89027222.okta.com
+       OKTA_CLIENT_ID=0oa20a396cBtVBkFM5d7
+       OKTA_CLIENT_SECRET=anrXvlxx3Wld5m_GkSw7QMdQDGcMtJztLVJ5MiSI
+
+       # Postgres configuration
+       PGHOST=10.0.1.4
+       PGUSERNAME=postgres
+       PGDATABASE=postgres
+       PGPASSWORD=2299
+       PGPORT=5432
