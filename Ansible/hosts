@@ -1,3 +1,9 @@
-[development]
-52.232.115.135
-51.144.246.14
+[production]
+52.166.131.39
+13.80.22.53
+[staging]
+52.166.131.181
+13.93.3.228
+[appservers:children]
+production
+staging

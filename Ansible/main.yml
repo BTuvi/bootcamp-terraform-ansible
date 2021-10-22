@@ -1,5 +1,5 @@
 ---
-- hosts: development
+- hosts: appservers
   remote_user: BTuvi
   become: yes
   become_method: sudo
