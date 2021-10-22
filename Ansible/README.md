@@ -1,7 +1,7 @@
 Ansible is the simplest way to automate apps and IT infrastructure. Application Deployment + Configuration Management + Continuous Delivery.
 
 Description
-Ansible Playbook to install Git, Node.js, NPM, MongoDB, PM2 and Nginx.
+Ansible Playbook to install Git, Node.js, NPM, Postgresql, PM2.
 
 ###Details This PlayBook works with Ubuntu 14.04.5 LTS (Trusty Tahr) and Python 2.7
 
