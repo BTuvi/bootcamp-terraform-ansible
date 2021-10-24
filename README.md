@@ -17,4 +17,8 @@ This sample application demonstrates the following technologies.
 * [PostgreSQL](https://www.postgresql.org/) (can be installed locally using Docker)
 * [Free Okta developer account](https://developer.okta.com/) for account registration, login
 
+FOR Production:
+1. change in OKTA to lb ip.
+2. change in ansible file(vars.yml) to lb ip.
 
+Same for staging.
