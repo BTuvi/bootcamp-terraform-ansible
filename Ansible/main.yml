@@ -2,6 +2,8 @@
 - hosts: appservers
   remote_user: BTuvi
   become: yes
+  vars_files:
+  - vars.yml
   become_method: sudo
   vars:
     temp_folder: /tmp
@@ -13,13 +15,16 @@
     - include: tasks/nodejs.yml
 
     #Git clone to project
-    #- include: tasks/gitclone.yml
+    - include: tasks/gitclone.yml
  
     #Add .env file
     - include: tasks/addEnvFile.yml
 
     #npm i
     - include: tasks/npmi.yml
+    
+    #InitDB
+    - include: tasks/dbrun.yml
 
     # PM2 jobs
     - include: tasks/pm2job.yml

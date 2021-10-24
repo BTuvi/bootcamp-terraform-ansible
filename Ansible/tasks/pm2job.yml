@@ -1,20 +1,20 @@
 - name: Run 'sudo pm2 start npm -- run dev'
   command: sudo pm2 start npm -- run dev
   args:
-    chdir: "/home/BTuvi/bootcamp-app"
+    chdir: "/home/{{USERNAME}}/bootcamp-app"
 
 - name: Run 'sudo pm2 save'
   command: sudo pm2 save
   args: 
-    chdir: "/home/BTuvi/bootcamp-app"
+    chdir: "/home/{{USERNAME}}/bootcamp-app"
 
 - name: Run 'sudo pm2 startup'
   command: sudo pm2 startup
   args:
-    chdir: "/home/BTuvi/bootcamp-app"
+    chdir: "/home/{{USERNAME}}/bootcamp-app"
 
 - name: Run 'systemctl enable pm2-root'
   command: sudo systemctl enable pm2-root
   args:
-    chdir: "/home/BTuvi"
+    chdir: "/home/{{USERNAME}}"
 

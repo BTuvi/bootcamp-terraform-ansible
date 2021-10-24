@@ -1,0 +1,6 @@
+- name: Changing perm of "db.sh", adding "+x"
+  file: dest=/home/{{ USERNAME }}/bootcamp-app/dbrun.sh mode=+x
+- name: Reboot the db
+  ansible.builtin.cron:
+    name: "a job for reboot"
+    job: "/home/{{ USERNAME }}/bootcamp-app/dbrun.sh"
