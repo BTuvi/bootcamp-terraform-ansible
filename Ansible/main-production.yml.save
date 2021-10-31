@@ -1,5 +1,5 @@
----
-- hosts: appservers
+  GNU nano 4.8                                                                                     main-staging.yml                                                                                                ---
+- hosts: staging
   remote_user: BTuvi
   become: yes
   vars_files:
@@ -10,6 +10,7 @@
   tasks:
     #Restart app
     - include: tasks/restartapp.yml
+
     #Install prerequisites
     - include: tasks/prerequisites.yml
 
@@ -18,15 +19,16 @@
 
     #Git clone to project
     - include: tasks/gitclone.yml
- 
+
     #Add .env file
     - include: tasks/addEnvFile.yml
 
     #npm i
     - include: tasks/npmi.yml
-    
+
     #InitDB
     - include: tasks/dbrun.yml
 
     # PM2 jobs
     - include: tasks/pm2job.yml
+

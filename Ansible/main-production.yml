@@ -1,15 +1,16 @@
 ---
-- hosts: appservers
+- hosts: production
   remote_user: BTuvi
   become: yes
   vars_files:
-  - vars.yml
+  - vars-production.yml
   become_method: sudo
   vars:
     temp_folder: /tmp
   tasks:
     #Restart app
     - include: tasks/restartapp.yml
+
     #Install prerequisites
     - include: tasks/prerequisites.yml
 
@@ -18,13 +19,13 @@
 
     #Git clone to project
     - include: tasks/gitclone.yml
- 
+
     #Add .env file
     - include: tasks/addEnvFile.yml
 
     #npm i
     - include: tasks/npmi.yml
-    
+
     #InitDB
     - include: tasks/dbrun.yml
 

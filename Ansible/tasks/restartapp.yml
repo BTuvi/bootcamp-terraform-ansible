@@ -1,0 +1,5 @@
+- name: restart 
+  become: yes
+  command: "rm -rf /home/BTuvi/bootcamp-app"
+  args:
+    chdir: /home/{{ USERNAME }}
