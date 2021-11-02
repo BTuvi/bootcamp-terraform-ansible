@@ -18,7 +18,10 @@
     - include: tasks/nodejs.yml
 
     #Git clone to project
-    - include: tasks/gitclone.yml
+    #- include: tasks/gitclone.yml
+    
+    #Copy app folder to remote server.
+    - include: tasks/copy_appfolder_artifact.yml
 
     #Add .env file
     - include: tasks/addEnvFile.yml

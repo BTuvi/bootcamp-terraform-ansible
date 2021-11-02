@@ -1,7 +1,7 @@
 USERNAME: 'BTuvi'
 
-PGHOSTNAME: 'postgres-production.postgres.database.azure.com'
-PGUSERNAMEE: 'BTuvi@postgres-production'
+PGHOSTNAME: 'bootcampdbserverstaging.postgres.database.azure.com'
+PGUSERNAMEE: 'BTuvi@bootcampdbserverstaging'
 PGPASS: '1p2a3s4s!5bar6'
 
 LB_PORT: '51.124.229.146'

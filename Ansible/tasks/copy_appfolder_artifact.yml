@@ -1,0 +1,4 @@
+- name: Ansible copy directory to the remote server
+  copy:
+   src: /home/BTuvi/myagent/_work/1/a/
+   dest: /home/BTuvi/bootcamp-app
